@@ -1,5 +1,5 @@
 <template>
-    <section class="print:hidden mt-[20px] flex justify-center items-center gap-[20px]">
+    <section class="print:hidden mt-[20px] flex justify-center flex-wrap items-center gap-[20px]">
         <a @click="$store.state.add = false" href="javascript:window.print()" class=" cursor-pointer h-[50px] bg-[#2b2a2a] px-[35px] flex justify-center items-center gap-[5px] rounded-sm text-[#fff]">
           <i class="fa fa-print text-[#ffffff] text-[12px]"></i>
           <p class="text-[16px]"> Print Invoice</p>

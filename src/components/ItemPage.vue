@@ -13,7 +13,7 @@
           <li class="flex justify-center items-center font-[500] w-[125px] sm:w-full uppercase py-[10px] text-[14px] border-[.5px] border-[#e7e7e7]">${{item.price }}</li>
           <li class="flex justify-center items-center font-[500] w-[125px] sm:w-full uppercase py-[10px] text-[14px] border-[.5px] border-[#e7e7e7]">{{item.quantity}}</li>
           <li class="flex justify-center items-center font-[500] w-[125px] sm:w-full uppercase py-[10px] text-[14px] border-[.5px] border-[#e7e7e7]" v-show="!$store.state.add">${{item.price * item.quantity}}</li>
-          <li class="flex justify-center items-center font-[500] w-[100px] sm:w-full uppercase text-[14px] border-[.5px] border-[#e7e7e7]" v-show="$store.state.add"><input type="submit" value="REMOVE" id="REMOVE" @click="removeitems(index)" class="bg-gradient-to-b text-[white] from-[#990500] via-[#720400] to-[#630c00] text-sm cursor-pointer focus:ring-blue-500 focus:border-blue-500 block w-full h-full p-2.5 "></li>
+          <li class="flex justify-center items-center font-[500] w-[125px] sm:w-full uppercase text-[14px] border-[.5px] border-[#e7e7e7]" v-show="$store.state.add"><input type="submit" value="REMOVE" id="REMOVE" @click="removeitems(index)" class="bg-gradient-to-b text-[white] from-[#990500] via-[#720400] to-[#630c00] text-sm cursor-pointer focus:ring-blue-500 focus:border-blue-500 block w-full h-full p-2.5 "></li>
         </ul>
         <form v-show="$store.state.add">
           <ul class="flex text-center items-stretch sm:grid sm:grid-cols-[repeat(2,1.03fr)_repeat(3,.9fr)] sm:w-full w-fit">
